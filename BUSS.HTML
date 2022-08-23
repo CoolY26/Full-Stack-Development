@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Buss Verification</title>
+		<link rel="icon"  href="buss pass logo.png" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<style type="text/css">
+			#form{
+				
+				text-align: center;
+				margin-left:30%;
+            	margin-right:30%;
+				margin-top: 5%;
+				margin-bottom:10%;
+                background-color:#ADD8E6;
+				padding:10px;
+				border-radius: 15px;					
+			}
+			#table{
+				margin-left:30%;
+                border-style:solid;
+				padding:10px;
+				margin-top:5%;
+				background-color:#FFFF00;
+			}
+			.pad{
+				padding:10px;
+			}
+			#header{
+				margin-top: 10px;
+				text-align: left;
+                background-color:white;
+				font-weight: bold;
+				font-size:50px;
+				padding: 10px;
+				margin-right: 50%;
+				border-radius: 15px;
+				text-decoration-color: firebrick;
+				text-decoration: underline;
+				margin-left: 3%;
+			}
+			body{
+				background-image: url("bus\ baground.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.navigation{
+				background-color: whitesmoke;
+				border-radius: 15px;
+				font-size: 20px;
+				font-weight: bold;
+				padding: 20px;
+
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header"><img src="buss pass logo.png" width="50" height="50">     Bus Pass Verification</div>
+        <hr>
+		<div class="navigation">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#form">Apply</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#table">Check</a>
+				</li>
+			  </ul>
+		</div>
+				
+		<div id="form" >
+			<form>
+			<b>Enter your Name:</b><input type="text" value:"Name" id="name"><br><br>
+			<b>Enter your Age:</b><input type="radio" name="age" class="age"value="18">18
+					<input type="radio" name="age" class="age" value="18 less">18 less
+					<input type="radio" name="age" class="age" value="18 more">18 more<br><br>
+			<b>Enter your Address:</b><input type="text box" value:"Name"><br><br>
+			<b>Enter your Gender:</b><input type="radio" name="gender" value="Male">Male
+					<input type="radio" name="gender" value="Female">Female
+					<input type="radio" name="gender" value="Other">Other<br><br>
+			<label for="email"><b>Enter your email:</b></label>
+  			<input type="email" id="email" name="email"><br><br>
+			<label> <b>Duration: </b></label>  
+			<select>  
+			<option value = "1 Month "> 1 Month   
+			</option>  
+			<option value = "2 Month "> 2 Month   
+			</option>  
+			<option value = "4 Month ">4 Month  
+			</option>  
+			</select>  <br><br>
+			<button type="Submit" value="Enter" id="update" onclick="a()">Enter</button>
+		   </form>
+		   
+		</div>
+                <hr>
+		
+			<table border="10px" id="table" >
+				
+					<tr>
+						<th class="pad">Name</th>
+						<th class="pad">Age</th>
+						<th class="pad">Address</th>
+						<th class="pad">Gender</th>
+						<th class="pad">Duration</th>
+						<th class="pad">Email Address</th>
+					</tr>
+				
+				<tb>
+					<tr>
+						<td class="pad">Yash</td>
+						<td class="pad">101010</td>
+						<td class="pad"> uuiffffitfut</td>
+						<td class="pad">MALE</td>
+						<td class="pad">2 months</td>
+						<td class="pad">vhyc@ccyfyf.com</td>
+					</tr>
+					
+				</tb>
+			</table>
+			<script>
+				var i=1;
+				function a(){
+						
+						var table=document.getElementById("table");
+						var row=table.insertRow(i);
+
+						var cell1=row.insertCell(0);
+						var cell2=row.insertCell(1);
+						var cell3=row.insertCell(2);
+						var cell4=row.insertCell(3);
+						var cell5=row.insertCell(4);
+						var cell6=row.insertCell(5);
+
+						cell1.innerHTML=document.getElementById("name").value;
+						cell1.innerHTML=document.getElementById("").value;
+						cell1.innerHTML=document.getElementById("name").value;
+						cell1.innerHTML=document.getElementById("name").value;
+						cell1.innerHTML=document.getElementById("name").value;
+						cell1.innerHTML=document.getElementById("name").value;
+
+
+						i=i+1;
+				}
+			</script>
+			<br><br>
+			<div class="container-fluid">
+				<div style="background-color: black;color:white;border-radius: 15px;padding: 20px;margin-bottom: 3px;">
+				  <div class="row">
+					<!-- <img src="buss pass logo.png" width="200px" height="200px"> <img src="cab logo.jpg" width="200px" height="200px"><img src="Intro-logo.jpg" width="200px" height="200px"><img src="metro pass logo.png" width="200px" height="200px"><img src="train pass logo.png" width="200px" height="200px"> -->
+					<div class="col-4 one">
+						<b>Area of operations:</b>
+					  <ul style="list-style-type: disc;">
+						<li>Mumbai</li>
+						<li>Delhi</li>
+						<li>Kolkata</li>
+						<li>Chennai</li>
+						<li>Nagpur</li>
+						<li>Pune</li>
+						<li>Chandigarh</li>
+						<li>Guhati</li>
+					  </ul>
+					</div>
+					<div class="col-4 one">
+					  <b> Pass Are available also for:</b>
+					  <ul style="list-style-type: circle;">
+						<li href="BUSS.HTML">Buss</li>
+						<li href="Train .html">Metro</li>
+						<li href="Cab.html">Cab</li>
+						<li href="Contact.html">contact us</li>
+						<li href="iNTRO.html">Home</li>
+					  </ul>
+					</div>
+					<div class="col-4 one">
+					  <p><b>Contact No.</b>: +91123456789</p>
+					  <br>
+					  <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style:italic;">    <b>Address</b>: 123,ABCDLO,
+											 ACHCA,JHCAVHC
+											 ,Mumbai,India-411067
+					  </p>
+					  <br>
+					  <p>   <b>PIN code</b>:  411067</p>
+					  <br>
+					  <p>      <b>Email</b>:  njksbvsdg@gmail.com</p>
+					</div>
+					<div class="col-12" style="text-align: center;">
+					  <b>Our Colaborators:</b><br><br>
+					  <img src="buss pass logo.png" width="100px" height="100">  <img src="cab logo.jpg" width="100px" height="100"> <img src="Intro-logo.jpg" width="100px" height="100">  <img src="metro pass logo.png" width="100px" height="100"> <img src="train pass logo.png" width="100px" height="100px">
+					 <br><br>
+					 <p>© COPYRIGHT 2022. ALL Right Reserved</p> 
+					</div>
+				  </div>
+				</div>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+	</body>
+	
+	
+</html>
